@@ -107,6 +107,8 @@ The project follows a strict **4-layer architecture** with clean separation of c
 
 ```
 LibraryManagementSystem/
+├── resources/
+│       └── schema.sql                   ← Database schema + seed data
 └── src/
     │
     ├── app/
@@ -176,14 +178,11 @@ LibraryManagementSystem/
     │   ├── PasswordUtil.java            ← BCrypt-ready password hashing
     │   └── DateUtil.java               ← Fine calculation, date formatting
     │
-    ├── exception/
-    │   ├── AuthenticationException.java
-    │   ├── BookNotFoundException.java
-    │   ├── StudentNotFoundException.java
-    │   └── InvalidChoiceException.java
-    │
-    └── resources/
-        └── schema.sql                   ← Database schema + seed data
+    └── exception/
+        ├── AuthenticationException.java
+        ├── BookNotFoundException.java
+        ├── StudentNotFoundException.java
+        └── InvalidChoiceException.java
 ```
 
 ---

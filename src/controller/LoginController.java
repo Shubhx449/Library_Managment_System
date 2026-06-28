@@ -9,9 +9,7 @@ public class LoginController {
 
     private final AuthenticationService authService = new AuthenticationService();
 
-    /**
-     * Handles login flow. Returns authenticated User or null on failure.
-     */
+
     public User handleLogin() {
         System.out.println("\n  ──────────────────────────────────");
         System.out.println("            USER LOGIN              ");
